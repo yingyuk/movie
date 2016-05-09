@@ -1,0 +1,23 @@
+extends ../layout
+
+block content
+	.container(style="padding-bottom:50px")
+		.row
+			table.table.table-hover.table-bordered
+				thead
+					tr
+						th 电影名字
+						th 数量
+						th 录入时间
+						th 查看
+						th 删除
+				tbody
+					each item in categories
+						tr(class="item-id-#{item._id}")
+							td #{item.name}
+							td #{item.movies.length}
+							td #{moment(item.meta.updateAt).format('MM/DD/YYYY')}
+							td: a(href="/results?cate=#{item._id}&p=0") 查看
+							td
+								button.btn.btn-danger.del(type="button",data-id="#{item._id}") 删除
+	script(src="/js/category.js")

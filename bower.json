@@ -1,0 +1,25 @@
+{
+  "name": "movie",
+  "description": "Movie Nodejs Web",
+  "main": "app.js",
+  "authors": [
+    "Yuk"
+  ],
+  "license": "MIT",
+  "homepage": "http://yingyuk.space/movie",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "public/libs"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  },
+  "keywords": [
+    "movie"
+  ]
+}

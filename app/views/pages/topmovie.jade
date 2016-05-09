@@ -1,0 +1,32 @@
+extends ../layout
+
+block content
+	.container(style="padding-bottom:50px")
+		.row
+			p 不要重复点击;一分钟点击一次就好;不然会被豆瓣封服务器的IP;
+		.row
+
+			table.table.table-hover.table-bordered
+				thead
+					tr
+						th 添加北美票房榜
+						th 添加热映榜
+						th 添加即将上映榜
+						th TOP 30
+						th TOP 30-60
+						th TOP 60-90
+				tbody
+						tr
+							td
+								button.btn.btn-success.add(type="button",data-id="us") 添加
+							td
+								button.btn.btn-success.add(type="button",data-id="theatre") 添加
+							td
+								button.btn.btn-success.add(type="button",data-id="coming") 添加
+							td
+								button.btn.btn-success.add(type="button",data-id="one") 添加
+							td
+								button.btn.btn-success.add(type="button",data-id="two") 添加
+							td
+								button.btn.btn-success.add(type="button",data-id="three") 添加
+	script(src="/js/addTop.js")

@@ -1,0 +1,15 @@
+extends ../layout
+
+block content
+	.container(style="padding-bottom:50px")
+		.row
+			form.form-horizontal(method="post",action="/admin/category/save")
+				.form-group
+					label.col-sm-2.control-label(for="inputcategory") 电影分类
+					.col-sm-5
+						input#inputcategory.form-control(type="text",name="category[name]",value=category.name)
+					span 机械战警
+ 
+				.form-group
+					.col-sm-offset-2.col-sm-10
+						button.btn.btn-default(type="submit") 录入
