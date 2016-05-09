@@ -2,7 +2,7 @@
  * @Author: Yuk
  * @Date:   2016-04-19 23:42:24
  * @Last Modified by:   Yuk
- * @Last Modified time: 2016-04-27 21:59:49
+ * @Last Modified time: 2016-05-09 17:16:21
  */
 
 'use strict';
@@ -10,7 +10,7 @@
 var express = require('express'); // 加载express模块;
 
 var path = require('path'); // 引入路径 相对文件路径;jquery;bootstrap;
-var port = process.env.PORT || 4000;
+var port = process.env.PORT || 2000;
 var mongoose = require('mongoose');
 var app = express(); // 启动web服务器; 将实例赋给app;
 var dbUrl = 'mongodb://localhost/movie';
