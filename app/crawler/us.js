@@ -2,7 +2,7 @@
  * @Author: Yuk
  * @Date:   2016-05-08 17:36:07
  * @Last Modified by:   Yuk
- * @Last Modified time: 2016-05-09 16:33:22
+ * @Last Modified time: 2016-05-10 15:19:04
  */
 
 'use strict';
@@ -25,6 +25,9 @@ exports.list = function(req, res) {
 }
 exports.addtop = function(req, res) {
   var id = req.query.id;
+  res.json({
+    success: 1
+  });
   if (id) {
     switch (id) {
       case 'us':
