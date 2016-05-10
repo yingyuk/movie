@@ -1,8 +1,8 @@
 /*
  * @Author: Yuk
  * @Date:   2016-04-24 14:59:32
- * @Last Modified by:   Yuk
- * @Last Modified time: 2016-05-09 14:32:11
+ * @Last Modified by:   yingyuk
+ * @Last Modified time: 2016-05-09 22:50:11
  */
 
 'use strict';
@@ -58,7 +58,7 @@ exports.search = function(req, res) {
           keyword: category.name,
           currentPage: page + 1,
           query: 'cate=' + cateId,
-          totalPage: Math.ceil(movies.length / 2),
+          totalPage: Math.ceil(movies.length / limit),
           movies: results
         });
       })

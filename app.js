@@ -2,7 +2,7 @@
  * @Author: Yuk
  * @Date:   2016-04-19 23:42:24
  * @Last Modified by:   Yuk
- * @Last Modified time: 2016-05-09 17:16:21
+ * @Last Modified time: 2016-05-10 14:20:57
  */
 
 'use strict';
@@ -60,7 +60,7 @@ app.use(session({ //依赖cookieParser;
   })
 }));
 
-app.set('views', __dirname + '\\app\\views\\pages\\'); // 视图默认目录
+app.set('views', __dirname + '/app/views/pages/'); // 视图默认目录
 app.set('view engine', 'jade');
 
 
