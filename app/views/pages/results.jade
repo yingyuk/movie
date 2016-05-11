@@ -1,6 +1,7 @@
 extends ../layout
 
 block content
+	link(href="/style/index.css",rel="stylesheet")
 	.container(style="padding-bottom:50px")
 		.row
 			.panel.panel-default
@@ -9,12 +10,12 @@ block content
 				.panel-body
 					if movies && movies.length > 0 
 						each item in movies
-							.col-md-2
+							.col-md-2.text-center(title="#{item.title}")
 								.thumbnail
 									a(href="/movie/#{item._id}")
 										img(src="#{item.poster}",alt="#{item.title}")
 									.caption
-										h3 #{item.title}
+										h3(class="ellipsis") #{item.title}
 										p:  a.btn.btn-primary(href="/movie/#{item._id}",role="button") 观看预告片
 			ul.pagination
 				- for(var i = 0; i < totalPage; i++){

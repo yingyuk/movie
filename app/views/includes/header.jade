@@ -7,7 +7,7 @@
 			.col-md-8
 				form(method="GET",action="/results")
 					.input-group.col-md-4.pull-right
-						input.form-control(type="text",name="q")
+						input.form-control(type="text",name="q",placeholder="可以搜索")
 						sapn.input-group-btn
 							button.btn.btn-default(type="submit") 搜索
 			.row
@@ -19,6 +19,8 @@
 					a(href="/signin") 用户登录
 				.col-md-2
 					a(href="/signup") 用户注册
+			.row
+				p 电影详情页;电影分类详情页;搜索功能;评论功能;点击头像进行回复;
 			hr
 			.row
 				.col-md-2
@@ -37,7 +39,6 @@
 				.col-md-2
 					a(href="/admin/category/list") 分类列表
 			.row 
-				p 还有电影详情页;电影分类详情页;搜索功能;评论功能;点击头像进行回复;
 				hr
 				p 还有很多功能需要完善;用户个人信息页面;自己的评论查看;点赞;收藏等等;
 				p 还需要加入前端框架;省的总是要刷新页面;

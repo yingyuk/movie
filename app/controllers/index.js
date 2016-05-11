@@ -1,8 +1,8 @@
 /*
  * @Author: Yuk
  * @Date:   2016-04-24 14:59:32
- * @Last Modified by:   yingyuk
- * @Last Modified time: 2016-05-09 22:50:11
+ * @Last Modified by:   Yuk
+ * @Last Modified time: 2016-05-11 09:45:35
  */
 
 'use strict';
@@ -14,7 +14,7 @@ exports.index = function(req, res) {
     .populate({
       path: 'movies',
       options: {
-        limit: 5
+        limit: 3
       }
     })
     .exec(function(err, categories) {

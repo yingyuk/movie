@@ -1,6 +1,6 @@
 extends ../layout
-
 block content
+	link(href="/style/index.css",rel="stylesheet")
 	.container(style="padding-bottom:50px")
 		.row
 			each cate in categories
@@ -11,10 +11,10 @@ block content
 					.panel-body
 						if cate.movies && cate.movies.length > 0 
 							each item in cate.movies
-								.col-md-2
+								.col-md-4.text-center
 									.thumbnail
 										a(href="/movie/#{item._id}")
 											img(src="#{item.poster}",alt="#{item.title}")
 										.caption
-											h3 #{item.title}
+											h3(title="#{item.title}",class="ellipsis") #{item.title}
 											p:  a.btn.btn-primary(href="/movie/#{item._id}",role="button") 观看预告片

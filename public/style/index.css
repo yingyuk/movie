@@ -1,0 +1,11 @@
+/*
+* @Author: Yuk
+* @Date:   2016-05-11 09:27:38
+* @Last Modified by:   Yuk
+* @Last Modified time: 2016-05-11 09:28:36
+*/
+.ellipsis{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
